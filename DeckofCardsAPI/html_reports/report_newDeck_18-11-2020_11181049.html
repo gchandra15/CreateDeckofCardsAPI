@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>Report</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+#customers {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#customers td, #customers th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+	background-color: #ddd;
+}
+
+#customers th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #4CAF50;
+	color: white;
+}
+
+.apibutton {
+	text-align: left;
+	background-color: #4682B4;
+	width: 98%;
+	text-align: center
+}
+
+.apiinfo {
+	text-align: centre;
+	background-color: #008080;
+	float: center;
+}
+
+#apiTitle {
+	border: none;
+	color: white;
+	adding: 15px 32px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 15px 10px;
+	cursor: pointer;
+}
+
+.testStatus {
+	border-style: solid;
+}
+
+.divSummary {
+	display: inline-block;
+	border: ridge;
+	width: 600px;
+	height: 200px;
+	margin-left: 50px;
+}
+</style>
+<script type="text/javascript">
+			window.onload = function () {
+				var chart = new CanvasJS.Chart("chartContainer",
+				{
+					theme: "light1",
+					title:{
+						text: "Test Case Summary"
+					},
+					legend: {
+						maxWidth: 200,
+						itemWidth: 90,
+						
+						
+					},
+					data: [
+					{
+						type: "pie",
+						showInLegend: true,
+						legendText: "{indexLabel}",
+						dataPoints: [
+							{ y: 2, indexLabel: "Passed" },{ y: 0, indexLabel: "Failed" },
+							<!--{ y: 3, indexLabel: "Passed" },-->	
+							<!--{ y: 1, indexLabel: "Failed" },-->						
+						]
+					}
+					]
+				});
+			chart.render();
+			}	
+	</script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+	<div>
+			<button id="apiTitle" class="apibutton">DeckofCardsAPI Service - newDeck test report</button>			
+		</div>
+		<div>
+			<div class="divSummary" style="padding:20px;">		
+			<pre style="padding:7px;">TEST CASE EXECUTION TIME : 556ms</pre><pre style="padding:7px;">TOTAL TEST CASE EXECUTED : 2</pre><pre style="padding:7px;"><font color="green" >TOTAL TEST CASE PASSED   : 2</font></pre><pre style="padding:7px;"><font color="red">TOTAL TEST CASE FAILED   : 0</font></pre>				
+			</div>
+			<div class="divSummary"><div id="chartContainer" style="height: 160px; width: 100%;"></div></div>
+		</div>
+		<br/>
+	<table id="customers">
+		<tr>
+			<th>Test Case Number</th>
+			<th>Test Case Scenario</th>
+			<th>Test Case Description</th>
+			<th>Request Body</th>
+			<th>Response Body</th>
+			<th>Test Status</th>
+		</tr>
+		<tr><td>TC-1</td><td>TC01</td><td>Verifying Service Response Message is SUCCESS for the new deck</td><td><a data-toggle="modal" data-target="#reqTC01">Request XML</a></td><td><a data-toggle="modal" data-target="#resTC01">Response XML</a></td><td><a data-toggle="modal" data-target="#passTC01"><font color ="green">PASSED</font></a></td></tr><tr><td>TC-2</td><td>TC2</td><td>Verifying Service Response Message is SUCCESS for the draw deck</td><td><a data-toggle="modal" data-target="#reqTC2">Request XML</a></td><td><a data-toggle="modal" data-target="#resTC2">Response XML</a></td><td><a data-toggle="modal" data-target="#passTC2"><font color ="green">PASSED</font></a></td></tr><!-- table data -->
+	</table>
+	<div class="container">
+		<div class="modal fade" id="reqTC01" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">reqTC01</h4></div><div class="modal-body"><textarea rows="20" cols="77">https://deckofcardsapi.com/api/deck/new/</textarea></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><div class="modal fade" id="reqTC2" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">reqTC2</h4></div><div class="modal-body"><textarea rows="20" cols="77">https://deckofcardsapi.com/api/deck/29yfdds2em3n/draw/</textarea></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><!-- request Modal -->
+	</div>
+	<div class="container">
+		<div class="modal fade" id="resTC01" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">resTC01</h4></div><div class="modal-body"><textarea rows="20" cols="77">{
+    "success": true,
+    "shuffled": false,
+    "deck_id": "29yfdds2em3n",
+    "remaining": 52
+}</textarea></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><div class="modal fade" id="resTC2" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">resTC2</h4></div><div class="modal-body"><textarea rows="20" cols="77">{
+    "cards": [{
+        "image": "https://deckofcardsapi.com/static/img/AS.png",
+        "images": {
+            "svg": "https://deckofcardsapi.com/static/img/AS.svg",
+            "png": "https://deckofcardsapi.com/static/img/AS.png"
+        },
+        "code": "AS",
+        "suit": "SPADES",
+        "value": "ACE"
+    }],
+    "success": true,
+    "deck_id": "29yfdds2em3n",
+    "remaining": 51
+}</textarea></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><!-- response Modal -->
+	</div>
+	<div class="container">
+		<div class="modal fade" id="passTC01" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">passTC01</h4></div><div class="modal-body"><textarea rows="20" cols="77">
+Validating Parameter : success....
+success parameter matched with expected output 
+ Actual :  true   expected :  true
+</textarea></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><div class="modal fade" id="passTC2" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">passTC2</h4></div><div class="modal-body"><textarea rows="20" cols="77">
+Validating Parameter : success....
+success parameter matched with expected output 
+ Actual :  true   expected :  true
+</textarea></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><!-- failed Modal -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<DeckofCardsAPI>
+	<properties>
+		<property name="newDeck">
+			<url>https://deckofcardsapi.com/api/deck/new/</url>
+			<template>newDeckTemplate</template>
+			<dataSheet>newDeckTestdata</dataSheet>
+			<headers name="Content-Type" value="application/json"></headers>
+			<!-- <response>
+				<extract templateName="newduck_Template">ResponseCode</extract>
+				<extract templateName="newduck_Template">ResponseMessage</extract>
+			</response> -->
+		</property>
+		<property name="drawDeck">
+			<url>https://deckofcardsapi.com/api/deck/</url>
+			<template>newDeckTemplate</template>
+			<dataSheet>drawDeckTestdata</dataSheet>
+			<headers name="Content-Type" value="application/json"></headers>
+		
+			<!-- <response>
+				<extract templateName="OrderProgressService_Template">ResponseCode</extract>
+				<extract templateName="OrderProgressService_Template">ResponseMessage</extract>
+			</response> -->
+		</property>
+	</properties>
+	<validations>
+		<TC01>
+			<validation number="TC01" requestParam="" responseParam="success"
+				property="equals" value="true"></validation>
+		</TC01>
+		<TC2>
+			<validation number="TC2" requestParam="" responseParam="success"
+				property="equals" value="true"></validation>
+		</TC2>
+
+	</validations>
+</DeckofCardsAPI>

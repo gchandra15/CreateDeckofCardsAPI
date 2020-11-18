@@ -1,0 +1,201 @@
+2020-11-323 10:49:53 [main] INFO :: Test Automation Suite started.......
+2020-11-323 10:49:54 [main] INFO :: Executing newDeck method for DeckofCardsAPI
+2020-11-323 10:49:54 [main] INFO :: Configuring Setting and parameters for Test....
+2020-11-323 10:49:54 [main] INFO :: Template Name : newDeckTemplate
+2020-11-323 10:49:54 [main] INFO :: DataSheet Name : newDeckTestdata
+2020-11-323 10:49:54 [main] INFO :: Url : https://deckofcardsapi.com/api/deck/new/
+2020-11-323 10:49:54 [main] INFO :: Headers Used : {Content-Type=application/json}
+2020-11-323 10:49:54 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:49:54 [main] INFO :: Test Started
+2020-11-323 10:49:54 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:49:55 [main] INFO :: Http Request Payload - 
+ {}
+2020-11-323 10:49:55 [main] INFO :: Current Execution Scenario  - TC01
+2020-11-323 10:49:55 [main] INFO :: Host Url - https://deckofcardsapi.com/api/deck/new/
+2020-11-323 10:49:55 [main] INFO :: Headers Used - {Content-Type=application/json}
+2020-11-323 10:49:57 [main] INFO :: Response from service : 
+{
+    "success": true,
+    "shuffled": false,
+    "deck_id": "29yfdds2em3n",
+    "remaining": 52
+}
+2020-11-323 10:49:57 [main] INFO :: Validating Parameter : success....
+2020-11-323 10:49:57 [main] INFO :: success parameter matched with expected output 
+
+2020-11-323 10:49:57 [main] INFO :: Test Automation Suite started.......
+2020-11-323 10:49:57 [main] INFO :: Executing drawDeck method for DeckofCardsAPI
+2020-11-323 10:49:57 [main] INFO :: Configuring Setting and parameters for Test....
+2020-11-323 10:49:57 [main] INFO :: Template Name : newDeckTemplate
+2020-11-323 10:49:57 [main] INFO :: DataSheet Name : drawDeckTestdata
+2020-11-323 10:49:57 [main] INFO :: Url : https://deckofcardsapi.com/api/deck/
+2020-11-323 10:49:57 [main] INFO :: Headers Used : {Content-Type=application/json}
+2020-11-323 10:49:58 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:49:58 [main] INFO :: Test Started
+2020-11-323 10:49:58 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:49:58 [main] INFO :: Http Request Payload - 
+ {}
+2020-11-323 10:49:58 [main] INFO :: Current Execution Scenario  - TC2
+2020-11-323 10:49:58 [main] INFO :: Host Url - https://deckofcardsapi.com/api/deck/
+2020-11-323 10:49:58 [main] INFO :: Headers Used - {Content-Type=application/json}
+2020-11-323 10:49:58 [main] INFO :: Response from service : 
+{
+    "cards": [{
+        "image": "https://deckofcardsapi.com/static/img/AS.png",
+        "images": {
+            "svg": "https://deckofcardsapi.com/static/img/AS.svg",
+            "png": "https://deckofcardsapi.com/static/img/AS.png"
+        },
+        "code": "AS",
+        "suit": "SPADES",
+        "value": "ACE"
+    }],
+    "success": true,
+    "deck_id": "29yfdds2em3n",
+    "remaining": 51
+}
+2020-11-323 10:49:58 [main] INFO :: Validating Parameter : success....
+2020-11-323 10:49:58 [main] INFO :: success parameter matched with expected output 
+
+2020-11-323 10:53:00 [main] INFO :: Test Automation Suite started.......
+2020-11-323 10:53:01 [main] INFO :: Executing newDeck method for DeckofCardsAPI
+2020-11-323 10:53:01 [main] INFO :: Configuring Setting and parameters for Test....
+2020-11-323 10:53:01 [main] INFO :: Template Name : newDeckTemplate
+2020-11-323 10:53:01 [main] INFO :: DataSheet Name : newDeckTestdata
+2020-11-323 10:53:01 [main] INFO :: Url : https://deckofcardsapi.com/api/deck/new/
+2020-11-323 10:53:01 [main] INFO :: Headers Used : {Content-Type=application/json}
+2020-11-323 10:53:01 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:53:01 [main] INFO :: Test Started
+2020-11-323 10:53:01 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:53:02 [main] INFO :: Http Request Payload - 
+ {}
+2020-11-323 10:53:02 [main] INFO :: Current Execution Scenario  - TC01
+2020-11-323 10:53:02 [main] INFO :: Host Url - https://deckofcardsapi.com/api/deck/new/
+2020-11-323 10:53:02 [main] INFO :: Headers Used - {Content-Type=application/json}
+2020-11-323 10:53:04 [main] INFO :: Response from service : 
+{
+    "success": true,
+    "shuffled": false,
+    "deck_id": "hgpyiv365lpx",
+    "remaining": 52
+}
+2020-11-323 10:53:04 [main] INFO :: Validating Parameter : success....
+2020-11-323 10:53:04 [main] INFO :: success parameter matched with expected output 
+
+2020-11-323 10:53:04 [main] INFO :: Test Automation Suite started.......
+2020-11-323 10:53:04 [main] INFO :: Executing drawDeck method for DeckofCardsAPI
+2020-11-323 10:53:04 [main] INFO :: Configuring Setting and parameters for Test....
+2020-11-323 10:53:04 [main] INFO :: Template Name : newDeckTemplate
+2020-11-323 10:53:04 [main] INFO :: DataSheet Name : drawDeckTestdata
+2020-11-323 10:53:04 [main] INFO :: Url : https://deckofcardsapi.com/api/deck/
+2020-11-323 10:53:04 [main] INFO :: Headers Used : {Content-Type=application/json}
+2020-11-323 10:53:04 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:53:04 [main] INFO :: Test Started
+2020-11-323 10:53:04 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:53:04 [main] INFO :: Http Request Payload - 
+ {}
+2020-11-323 10:53:04 [main] INFO :: Current Execution Scenario  - TC2
+2020-11-323 10:53:04 [main] INFO :: Host Url - https://deckofcardsapi.com/api/deck/
+2020-11-323 10:53:04 [main] INFO :: Headers Used - {Content-Type=application/json}
+2020-11-323 10:53:04 [main] INFO :: Response from service : 
+{
+    "cards": [{
+        "image": "https://deckofcardsapi.com/static/img/AS.png",
+        "images": {
+            "svg": "https://deckofcardsapi.com/static/img/AS.svg",
+            "png": "https://deckofcardsapi.com/static/img/AS.png"
+        },
+        "code": "AS",
+        "suit": "SPADES",
+        "value": "ACE"
+    }],
+    "success": true,
+    "deck_id": "hgpyiv365lpx",
+    "remaining": 51
+}
+2020-11-323 10:53:04 [main] INFO :: Validating Parameter : success....
+2020-11-323 10:53:04 [main] INFO :: success parameter matched with expected output 
+
+2020-11-323 10:59:43 [main] INFO :: Test Automation Suite started.......
+2020-11-323 10:59:43 [main] INFO :: Executing newDeck method for DeckofCardsAPI
+2020-11-323 10:59:43 [main] INFO :: Configuring Setting and parameters for Test....
+2020-11-323 10:59:43 [main] INFO :: Template Name : newDeckTemplate
+2020-11-323 10:59:43 [main] INFO :: DataSheet Name : newDeckTestdata
+2020-11-323 10:59:43 [main] INFO :: Url : https://deckofcardsapi.com/api/deck/new/
+2020-11-323 10:59:43 [main] INFO :: Headers Used : {Content-Type=application/json}
+2020-11-323 10:59:44 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:59:44 [main] INFO :: Test Started
+2020-11-323 10:59:44 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:59:45 [main] INFO :: Http Request Payload - 
+ {}
+2020-11-323 10:59:45 [main] INFO :: Current Execution Scenario  - TC01
+2020-11-323 10:59:45 [main] INFO :: Host Url - https://deckofcardsapi.com/api/deck/new/
+2020-11-323 10:59:45 [main] INFO :: Headers Used - {Content-Type=application/json}
+2020-11-323 10:59:46 [main] INFO :: Response from service : 
+{
+    "success": true,
+    "shuffled": false,
+    "deck_id": "uf68npqvfarv",
+    "remaining": 52
+}
+2020-11-323 10:59:46 [main] INFO :: Validating Parameter : success....
+2020-11-323 10:59:46 [main] INFO :: success parameter matched with expected output 
+
+2020-11-323 10:59:46 [main] INFO :: Test Automation Suite started.......
+2020-11-323 10:59:46 [main] INFO :: Executing drawDeck method for DeckofCardsAPI
+2020-11-323 10:59:46 [main] INFO :: Configuring Setting and parameters for Test....
+2020-11-323 10:59:46 [main] INFO :: Template Name : newDeckTemplate
+2020-11-323 10:59:46 [main] INFO :: DataSheet Name : drawDeckTestdata
+2020-11-323 10:59:46 [main] INFO :: Url : https://deckofcardsapi.com/api/deck/
+2020-11-323 10:59:46 [main] INFO :: Headers Used : {Content-Type=application/json}
+2020-11-323 10:59:47 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:59:47 [main] INFO :: Test Started
+2020-11-323 10:59:47 [main] INFO :: 
+******************************************************************************
+
+2020-11-323 10:59:47 [main] INFO :: Http Request Payload - 
+ {}
+2020-11-323 10:59:47 [main] INFO :: Current Execution Scenario  - TC2
+2020-11-323 10:59:47 [main] INFO :: Host Url - https://deckofcardsapi.com/api/deck/
+2020-11-323 10:59:47 [main] INFO :: Headers Used - {Content-Type=application/json}
+2020-11-323 10:59:47 [main] INFO :: Response from service : 
+{
+    "cards": [{
+        "image": "https://deckofcardsapi.com/static/img/AS.png",
+        "images": {
+            "svg": "https://deckofcardsapi.com/static/img/AS.svg",
+            "png": "https://deckofcardsapi.com/static/img/AS.png"
+        },
+        "code": "AS",
+        "suit": "SPADES",
+        "value": "ACE"
+    }],
+    "success": true,
+    "deck_id": "uf68npqvfarv",
+    "remaining": 51
+}
+2020-11-323 10:59:47 [main] INFO :: Validating Parameter : success....
+2020-11-323 10:59:47 [main] INFO :: success parameter matched with expected output 
+
